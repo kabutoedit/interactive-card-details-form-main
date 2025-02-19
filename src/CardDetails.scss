@@ -1,260 +1,261 @@
-@import "@fontsource/roboto/index.css";
+@import '@fontsource/roboto/index.css';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap');
 
-
 .cardDetails {
-  display: flex;
-  align-items: center;
-  background-image: url('../images/bg-main-desktop.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 100vh;
-  gap: 200px;
+	display: flex;
+	align-items: center;
+	background-image: url('../images/bg-main-desktop.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 100vh;
+	gap: 200px;
 
-  section {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-left: 8%;
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		margin-left: 8%;
 
-    .cardFront {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 450px;
-      height: 250px;
-      background-image: url('../images/bg-card-front.png');
-      background-repeat: no-repeat;
+		.cardFront {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			width: 450px;
+			height: 250px;
+			background-image: url('../images/bg-card-front.png');
+			background-repeat: no-repeat;
 
-      .circles {
-        display: flex;
-        align-items: center;
-        margin: 20px 20px; 
-        gap: 15px;
+			.circles {
+				display: flex;
+				align-items: center;
+				margin: 20px 20px;
+				gap: 15px;
 
+				.circle {
+					width: 45px;
+					height: 45px;
+					border-radius: 50%;
+					background-color: white;
+				}
 
-        .circle {
-          width: 45px;
-          height: 45px;
-          border-radius: 50%;
-          background-color: white;
-        }
+				.circleLow {
+					width: 20px;
+					height: 20px;
+					border-radius: 50%;
+					border: 1px solid white;
+				}
+			}
 
-        .circleLow {
-          width: 20px;
-          height: 20px;
-          border-radius: 50%;
-          border: 1px solid white;
-        }
-      }
+			.cardData {
+				display: flex;
+				flex-direction: column;
+				margin: 30px 20px;
+				gap: 25px;
+				p {
+					text-align: left;
+					margin: 0;
+					font-family: 'Roboto';
+					font-size: 24px;
+					color: white;
+					font-weight: 500;
 
-      .cardData {
-        display: flex;
-        flex-direction: column;
-        margin: 30px 20px;
-        gap: 25px;
-        p {
-          text-align: left;
-          margin: 0;
-          font-family: "Roboto";
-          font-size: 24px;
-          color: white;
-          font-weight: 500;
+					&:hover {
+						cursor: default;
+					}
+				}
 
-          &:hover {
-            cursor: default;
-          }
-        }
+				.cardName {
+					display: flex;
+					justify-content: space-between;
+					h6 {
+						margin: 0;
+						text-transform: uppercase;
+						font-family: 'Roboto';
+						font-size: 16px;
+						color: white;
+						font-weight: 500;
 
-        .cardName {
-          display: flex;
-          justify-content: space-between;
-          h6 {
-            margin: 0;
-            text-transform: uppercase;
-            font-family: "Roboto";
-            font-size: 16px;
-            color: white;
-            font-weight: 500;
+						&:hover {
+							cursor: default;
+						}
+					}
+				}
+			}
+		}
 
-            &:hover {
-              cursor: default;
-            }
-          }
-        }
-      }
-    }
+		.cardBack {
+			width: 450px;
+			height: 250px;
+			background-image: url('../images/bg-card-back.png');
+			background-repeat: no-repeat;
+			margin-left: 100px;
 
-    .cardBack {
-      width: 450px;
-      height: 250px;
-      background-image: url('../images/bg-card-back.png');
-      background-repeat: no-repeat;
-      margin-left: 100px;
+			p {
+				color: white;
+				text-align: right;
+				margin: 110px 60px;
+				font-family: 'Roboto';
+				font-size: 18px;
+				font-weight: 500;
 
-      p {
-        color: white;
-        text-align: right;
-        margin: 110px 60px;
-        font-family: "Roboto";
-        font-size: 18px;
-        font-weight: 500;
+				&:hover {
+					cursor: default;
+				}
+			}
+		}
+	}
 
-        &:hover {
-          cursor: default;
-        }
-      }
-    }
-  }
+	.newCard {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		gap: 30px;
+		margin-left: 150px;
 
-  .newCard {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
-    margin-left: 150px;
+		.circle {
+			width: 65px;
+			height: 65px;
+			border-radius: 50%;
+			background: linear-gradient(180deg, #696afc 0%, #67248d 100%);
+			color: white !important;
+			font-size: 24px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 
-    .circle {
-      width: 65px;
-      height: 65px;
-      border-radius: 50%;
-      background: linear-gradient(180deg, #871eff 0%, #4d0078 100%);
-      color: white;
-      font-size: 24px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+			svg {
+				color: white;
+			}
+		}
 
-    h2 {
-      margin: 0;
-      font-family: "Poppins";
-      font-size: 24px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 5px;
-    }
+		h2 {
+			margin: 0;
+			font-family: 'Poppins';
+			font-size: 24px;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 5px;
+		}
 
-    p {
-      color: gray;
-      margin: 0;
-      font-family: "Poppins";
-      font-size: 18px;
-      font-weight: 500;
-      letter-spacing: 1px;
-      margin-bottom: 10px;
-      margin-top: -10px;
-    }
+		p {
+			color: gray;
+			margin: 0;
+			font-family: 'Poppins';
+			font-size: 18px;
+			font-weight: 500;
+			letter-spacing: 1px;
+			margin-bottom: 10px;
+			margin-top: -10px;
+		}
 
-    button {
-      width: 140%;
-      height: 55px;
-      border-radius: 10px;
-      border: none;
-      font-family: "Poppins";
-      font-size: 20px;
-      font-weight: 500;
-      background-color: #1a0034;
-      color: white;
+		button {
+			width: 140%;
+			height: 55px;
+			border-radius: 10px;
+			border: none;
+			font-family: 'Poppins';
+			font-size: 20px;
+			font-weight: 500;
+			background-color: #1a0034;
+			color: white;
 
-      &:hover {
-        cursor: pointer;
-      }
-    }
-  }
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
 
+	.cardNewData {
+		width: 550px;
 
-  .cardNewData {
-    width: 550px;
+		label {
+			font-family: 'Roboto';
+			font-size: 20px;
+			font-weight: 600;
 
-    label {
-      font-family: "Roboto";
-      font-size: 20px;
-      font-weight: 600;
+			&:hover {
+				cursor: default;
+			}
+		}
 
-      &:hover {
-        cursor: default;
-      }
-    }
+		.errorMessage {
+			height: 15px;
+			display: flex;
+			white-space: nowrap;
+			font-family: 'Roboto';
+			font-size: 15px;
+			font-weight: 600;
+			margin-top: -20px;
+			margin-bottom: 10px;
+		}
 
-    .errorMessage {
-      height: 15px;
-      display: flex;
-      white-space: nowrap;
-      font-family: "Roboto";
-      font-size: 15px;
-      font-weight: 600;
-      margin-top: -20px;
-      margin-bottom: 10px;
-    }
+		.errorMessage2 {
+			position: relative;
+			height: 15px;
+			width: 12px;
+			left: -255px;
+			top: 65px;
+			display: flex;
+			font-family: 'Roboto';
+			font-size: 15px;
+			font-weight: 600;
+			margin-top: 5px;
+		}
 
-    .errorMessage2 {
-      position: relative;
-      height: 15px;
-      width: 12px;
-      left: -255px;
-      top: 65px;
-      display: flex;
-      font-family: "Roboto";
-      font-size: 15px;
-      font-weight: 600;
-      margin-top: 5px;
-    }
+		.cvcText {
+			margin-left: 95px;
+		}
 
-    .cvcText {
-      margin-left: 95px;
-    }
+		input {
+			width: 532px;
+			color: rgb(182, 182, 182);
+			height: 50px;
+			padding-left: 15px;
+			border-radius: 10px;
+			border: 1px solid #e8e8e8;
+			font-family: 'Roboto';
+			font-size: 20px;
+			font-weight: 600;
+			margin-top: 10px;
+			margin-bottom: 30px;
 
-    input {
-      width: 532px;
-      color: rgb(182, 182, 182);
-      height: 50px; 
-      padding-left: 15px;
-      border-radius: 10px;
-      border: 1px solid #E8E8E8;
-      font-family: "Roboto";
-      font-size: 20px;
-      font-weight: 600;
-      margin-top: 10px;
-      margin-bottom: 30px;
+			&::placeholder {
+				color: rgb(182, 182, 182);
+			}
+		}
 
-      &::placeholder {
-        color: rgb(182, 182, 182);
-      }
-    }
+		.smallInput {
+			width: 100px;
+			margin-right: 10px;
+		}
 
-    .smallInput {
-      width: 100px;
-      margin-right: 10px;
-    }
+		.mediumInput {
+			width: 315px;
+			margin-left: 10px;
+		}
 
-    .mediumInput {
-      width: 315px;
-      margin-left: 10px;
-    }
+		.cvc {
+			width: 50%;
+		}
 
-    .cvc {
-      width: 50%;
-    }
+		div {
+			display: flex;
+		}
 
-    div {
-      display: flex;
-    }
+		button {
+			width: 100%;
+			height: 65px;
+			border-radius: 10px;
+			border: none;
+			font-family: 'Roboto';
+			font-size: 20px;
+			font-weight: 500;
+			background-color: #1a0034;
+			color: white;
 
-    button {
-      width: 100%;
-      height: 65px;
-      border-radius: 10px;
-      border: none;
-      font-family: "Roboto";
-      font-size: 20px;
-      font-weight: 500;
-      background-color: #1a0034;
-      color: white;
-
-      &:hover {
-        cursor: pointer;
-      }
-    }
-  }
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
 }
